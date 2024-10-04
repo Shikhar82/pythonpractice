@@ -1,4 +1,5 @@
 import boto3
+import os
 ec2_resource = boto3.resource('ec2')
 instances = ec2_resource.create_instances(
     ImageId = 'ami-09b0a86a2c84101e1',
